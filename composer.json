@@ -1,0 +1,24 @@
+{
+    "name": "exan/input-parser",
+    "description": "Parse body of PSR7 requests",
+    "type": "library",
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.26",
+        "phpunit/phpunit": "^10.3"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Exan\\InputParser\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Exanlv",
+            "email": "exan@landviz.nl"
+        }
+    ],
+    "require": {
+        "psr/http-message": "^2.0"
+    }
+}
