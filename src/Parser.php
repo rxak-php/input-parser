@@ -2,9 +2,9 @@
 
 namespace Exan\InputParser;
 
-use DriverInterface;
-use Exan\InputParser\Driver\FormUrlEncodedDriver;
-use Exan\InputParser\Driver\JsonEncodedDriver;
+use Exan\InputParser\Drivers\DriverInterface;
+use Exan\InputParser\Drivers\FormUrlEncodedDriver;
+use Exan\InputParser\Drivers\JsonEncodedDriver;
 use Exan\InputParser\Exceptions\NoDriverException;
 use Psr\Http\Message\RequestInterface;
 

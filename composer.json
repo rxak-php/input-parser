@@ -4,7 +4,8 @@
     "type": "library",
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.26",
-        "phpunit/phpunit": "^10.3"
+        "phpunit/phpunit": "^10.3",
+        "mockery/mockery": "^1.6"
     },
     "license": "MIT",
     "autoload": {
@@ -20,5 +21,12 @@
     ],
     "require": {
         "psr/http-message": "^2.0"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-coverage": "@php -d xdebug.mode=coverage ./vendor/bin/phpunit --coverage-html .phpunit.cache/cov-html",
+
+        "cs": "./vendor/bin/php-cs-fixer fix src/ --rules=@PER --dry-run --diff",
+        "csf": "./vendor/bin/php-cs-fixer fix src/ --rules=@PER"
     }
 }

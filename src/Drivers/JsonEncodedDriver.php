@@ -1,6 +1,6 @@
 <?php
 
-namespace Exan\InputParser\Driver;
+namespace Exan\InputParser\Drivers;
 
 use Psr\Http\Message\StreamInterface;
 
