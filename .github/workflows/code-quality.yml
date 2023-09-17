@@ -1,4 +1,4 @@
-name: Retrier Code Quality Assurance
+name: Input Parser Quality Assurance
 run-name: ${{ github.actor }} is running code quality assurance
 on:
   pull_request:
